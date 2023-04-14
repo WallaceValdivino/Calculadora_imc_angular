@@ -1,0 +1,20 @@
+<h1>Calculadora IMC</h1>
+<div
+  class="position-absolute top-50 start-50 translate-middle bg-primary text-center rounded"
+>
+  <form>
+    <h1>Digite a Altura</h1>
+    <input id="altura" type="number" [(ngModel)]="altura"/>
+    <h1>Digite o Peso</h1>
+    <input id="peso" type="number" [(ngModel)]="peso"  />
+    <select id="sexo" [(ngModel)]="sexo">
+      <option ngValue="nada">Selecione seu sexo</option>
+      <option ngValue="mulher">Mulher</option>
+      <option ngValue="homem">Homem</option>
+    </select>
+  </form>
+
+  <button type="button" onclick="operacao()">Calcular IMC</button>
+  <input id="resultado" type="number"   disabled [(ngModel)]="resultado"/>
+  <input id="situacao" type="text"  disabled  [(ngModel)]="situacao"/>
+</div>
