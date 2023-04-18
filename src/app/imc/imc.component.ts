@@ -11,7 +11,9 @@ export class ImcComponent {
   resultado: number =0;
   situacao: string = "";
   sexo : string = "";
-   operacao() {
+
+
+  calcularIMC() {
 
     this.resultado =  this.peso / ( this.altura *  this.altura);
 
